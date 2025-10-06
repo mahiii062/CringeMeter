@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ক্রিঞ্জ ডিটেক্টর</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Login Section -->
+        <div id="login-screen">
+            <h1>😒 How Much Cringe You Are? 🤡</h1>
+            <h4> বিঃ দ্রঃ এই কুইজটি বিনোদনের উদ্দেশ্যে তৈরি করা👻। বাস্তবের সাথে মিল বা অমিল থাকতে পারে।<br>
+                যদি মিল হয় তাহলে আমি একান্তই দুঃখিত👾, হাইপার না হয়ে মজা উপভোগ করেন।🤷‍♂️
+            </h4>
+            <input id="username" type="text" placeholder="কষ্ট করিয়া আপনার নাম লিখে কুইজ শুরু করেন!😎">
+            <button id="start-btn" class="btn">নাম লিখা তো শেষ, তাইলে শুরু করে দেন!!!🚀</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-screen" class="hide">
+            <h1 class="title">How Much Cringe You Are?</h1>
+            <div class="progress-info">
+                <span id="progress-text">প্রশ্ন 1 / 20</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <div id="quiz">
+                <div id="question" class="question"></div>
+                <div id="answer-buttons" class="answer-buttons"></div>
+
+                <div class="controls">
+                    <button id="prev-btn" class="btn prev-btn">🔙 পেছনে যান</button>
+                    <button id="next-btn" class="btn next-btn">পরবর্তী ➡️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result-container" class="hide">
+            <div id="result-emoji" class="result-emoji"></div>
+            <div id="result-text" class="result-text"></div>
+            <div class="result-actions">
+                <h3> কুইজ তো দিয়েই দিলেন।🙀 এখন তো সময় সামাজিক কাজ করার।🤭<br>
+                    আপনার নিকটস্থ বন্ধু/বান্ধুবি কে লিঙ্ক শেয়ার করে কুইজ খেলার আমন্ত্রন দেন।🤦‍♂️
+                </h3>
+                <a id="share-btn" class="btn share-btn" target="_blank">📢 Facebook এ শেয়ার করুন</a>
+                <button id="restart-btn" class="btn restart-btn">🔄 আবার শুরু করুন</button>
+            </div>
+            <h2>🏆 Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
